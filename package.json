@@ -1,0 +1,24 @@
+{
+  "name": "product-list-app",
+  "version": "1.0.0",
+  "description": "product list app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anastasiyaaaaaaa/product-list-app.git"
+  },
+  "keywords": [
+    "products",
+    "cat",
+    "food"
+  ],
+  "author": "Anastasiya <Soboleva1594@yandex.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anastasiyaaaaaaa/product-list-app/issues"
+  },
+  "homepage": "https://github.com/Anastasiyaaaaaaa/product-list-app#readme"
+}
