@@ -3,10 +3,28 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+/** чтобы не дубоировать код */
+const babelOptions = preset => {
+    const opts = {
+        presets: [
+            '@babel/preset-env'
+        ],
+        plugins: [
+            '@babel/plugin-proposal-class-properties'
+        ]
+    }
+
+    if (preset) {
+        opts.presets.push(preset);
+    }
+
+    return opts;
+}
+
 module.exports = {
     mode: 'development',
     entry: {
-        main: ['@babel/polyfill', './src/index.js']
+        main: ['@babel/polyfill', './src/index.jsx']
     },
     output: {
         filename: '[name].bundle.js',
@@ -54,12 +72,17 @@ module.exports = {
                 exclude: /node_modules/,
                 use: {
                     loader: "babel-loader",
-                    options: {
-                        presets: ['@babel/preset-env'],
-                        plugins: ['@babel/plugin-proposal-class-properties']
-                    }
+                    options: babelOptions()
                 }
-            }
+            },
+            {
+                test: /\.m?jsx$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader",
+                    options: babelOptions('@babel/preset-react')
+                }
+            },
         ]
     },
 
