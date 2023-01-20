@@ -13,6 +13,9 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         assetModuleFilename: 'assets/[hash][ext][query]',
     },
+    devServer: {
+        port: 4200
+    },
     plugins: [
         /** шаблон html, куда подключаем скрипты и стили */
         new HTMLWebpackPlugin({
