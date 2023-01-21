@@ -12,6 +12,7 @@
 
 .card__content {
     cursor: pointer;
+    overflow: hidden;
     position: absolute;
     background: white;
     top: 4px;
@@ -22,6 +23,16 @@
     clip-path: polygon(14.7% 0, 100% 0, 100% 100%, 0 100%, 0 9.7%);
 }
 
+.card__content-container {
+    margin: 20px 40px;
+}
+
 .card__button {
     cursor: pointer;
+}
+
+.card__foto {
+    position: absolute;
+    right: -20px;
+    bottom: -95px;
 }
