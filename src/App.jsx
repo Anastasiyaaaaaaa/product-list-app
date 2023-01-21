@@ -6,7 +6,6 @@ export const App = () => {
     return <div className='App'>
         <header></header>
         <main> 
-            <p> Ты сегодня покормил кота?</p>
             <Cards />
         </main>
         <footer></footer>

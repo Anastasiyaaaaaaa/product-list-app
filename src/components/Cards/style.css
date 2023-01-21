@@ -1,5 +1,13 @@
 .cards {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.cards__header {
+    text-align: center;
+}
+
+.cards__content {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
