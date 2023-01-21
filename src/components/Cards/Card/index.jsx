@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style.css'
 import catFoto from './img/cat-photo.png'
 
 export const Card = ({ data }) => {
-    return <div className='card'>
-        <div className="card__border">
+
+    const [isSelected, setIsSelected] = useState(false);
+
+    const handleClick = () => {
+        setIsSelected(!isSelected)
+    }
+
+    return <div className={`card_${isSelected ? 'selected' : 'default'}`}>
+        <div className="card__border" onClick={handleClick}>
             <div className="card__content">
 
                 <div className="card__content-container">
@@ -30,7 +37,12 @@ export const Card = ({ data }) => {
         </div>
         <div className='card__footer'>
             <p>Чего сидишь? Порадуй котэ,
-                <button className='card__button' type='button'>купи.</button></p>
+                <button
+                    className='card__button'
+                    type='button'
+                    onClick={handleClick}>купи.
+                </button>
+            </p>
         </div>
     </div>
 }

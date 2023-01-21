@@ -1,5 +1,13 @@
 .card {}
 
+.card_selected .card__border {
+    background-color: #d91667;
+}
+
+.card_default .card__border {
+    background-color: #1698d9;
+}
+
 .card__border {
     /* margin: 14px; */
     position: relative;
@@ -7,7 +15,6 @@
     height: 488px;
     border-radius: 14px;
     clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
-    background-color: #1698d9;
 }
 
 .card__content {
