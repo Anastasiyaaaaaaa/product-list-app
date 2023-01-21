@@ -31,8 +31,11 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         assetModuleFilename: 'assets/[hash][ext][query]',
     },
+    resolve: {
+        extensions: ['.js', '.jsx']
+    },
     devServer: {
-        port: 4200
+        port: 3000
     },
     plugins: [
         /** шаблон html, куда подключаем скрипты и стили */
