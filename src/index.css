@@ -1,0 +1,5 @@
+@import "~normalize.css";
+@font-face {
+    font-family: "Exo 2.0", arial;
+    src: url("./fonts/Exo2.0-Thin.otf");
+}

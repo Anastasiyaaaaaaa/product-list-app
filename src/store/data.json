@@ -1,0 +1,56 @@
+{
+    "Products": [
+
+        {
+            "id": "1",
+            "name": "Нямушка",
+            "taste": "с фуа-гра",
+            "quantity": "10  порций",
+            "img": "",
+            "weight": "0,5 кг",
+            "present": "мышь в подарок",
+            "dopInfo": "",
+            "topDefault": "Сказочное заморское яство",
+            "topSelectedHover": "Котэ не одобряет?",
+            "footerDefault": "Чего сидишь? Порадуй котэ,",
+            "footerSelected": "Печень утки разварная с артишоками.",
+            "footerDisable": "Печалька, с фуа-гра закончился.",
+            "stocked": "yes"
+        },
+
+        {
+            "id": "2",
+            "name": "Нямушка",
+            "taste": "с рыбой",
+            "quantity": "40 порций",
+            "img": "",
+            "weight": "2 кг",
+            "present": "2 мыши в подарок",
+            "dopInfo": "",
+            "topDefault": "Сказочное заморское яство",
+            "topSelectedHover": "Котэ не одобряет?",
+            "footerDefault": "Чего сидишь? Порадуй котэ,",
+            "footerSelected": "Головы щучьи с чесноком да свежайшая сёмгушка.",
+            "footerDisable": "Печалька, с рыбой закончился.",
+            "stocked": "yes"
+        },
+
+        {
+            "id": "3",
+            "name": "Нямушка",
+            "taste": "с курой",
+            "quantity": "100 порций",
+            "img": "",
+            "weight": "5 кг",
+            "present": "5 мышей в подарок",
+            "dopInfo": "заказчик доволен",
+            "topDefault": "Сказочное заморское яство",
+            "topSelectedHover": "Котэ не одобряет?",
+            "footerDefault": "Чего сидишь? Порадуй котэ,",
+            "footerSelected": "Филе из цыплят с трюфелями в бульоне.",
+            "footerDisable": "Печалька, с курой закончился.",
+            "stocked": "no"
+        }
+
+    ]
+}
