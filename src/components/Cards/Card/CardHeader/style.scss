@@ -1,8 +1,9 @@
 @import '../../../../utils/variables.scss';
 .card__header {
     transition: color 0.5s;
-    margin: 20px 40px;
+    margin: 25px 40px 18px 40px;
     font-size: 16px;
+    color: $contentColor;
 }
 
 .card_selected .card__border:hover .card__header {
