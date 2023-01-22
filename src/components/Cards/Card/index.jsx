@@ -61,16 +61,20 @@ export const Card = ({ data }) => {
             </div>
         </div>
         <div className='card__footer'>
-            {isSelected ?
-                <span>{data.footerSelected}</span> 
-                : <span>Чего сидишь? Порадуй котэ, 
-                    <button
-                        className='card__button'
-                        type='button'
-                        onClick={handleClick}> купи.
-                    </button>
-                </span>
+            {
+                isStocked ?
+                    isSelected ?
+                        <span>{data.footerSelected}</span>
+                        : <span>Чего сидишь? Порадуй котэ,
+                            <button
+                                className='card__button'
+                                type='button'
+                                onClick={handleClick}> купи.
+                            </button>
+                        </span>
+                    : 
+                    <span>Печалька, с рыбой закончился.</span> 
             }
         </div>
-    </div>
+    </div >
 }

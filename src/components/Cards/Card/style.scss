@@ -9,6 +9,7 @@
     width: fit-content;
     max-width: 300px;
     margin: 0 auto;
+    color: #ffffff;
 }
 
 .card__border {
@@ -84,6 +85,10 @@
     background-color: $disableBorderColor;
 }
 
-.card_disable .card__border {
+.card_disable .card__content {
     opacity: 0.5
+}
+
+.card_disable .card__footer {
+    color: $disableFooterColor;
 }
