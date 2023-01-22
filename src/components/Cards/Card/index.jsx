@@ -5,17 +5,24 @@ import catFoto from './img/cat-photo.png'
 export const Card = ({ data }) => {
 
     const [isSelected, setIsSelected] = useState(false);
+    const [isHovered, setIsHovered] = useState(false);
 
     const handleClick = () => {
         setIsSelected(!isSelected)
     }
+    const handleMouseOver = () => {
+        setIsHovered(true)
+    }
+    const handleMouseOut = () => {
+        setIsHovered(false)
+    }
 
     return <div className={`card_${isSelected ? 'selected' : 'default'}`}>
-        <div className="card__border" onClick={handleClick}>
+        <div className="card__border" onClick={handleClick} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
             <div className="card__content">
 
-                <div className="card__content-container">
-                    <div className='card__header'>Сказочное заморское яство</div>
+                <div className="card__text-container"> 
+                        <div className='card__header'>Сказочное заморское яство</div> 
                     <div className='card__title'> {data.name} </div>
                     <div className='card__subtitle'> {data.taste} </div>
 

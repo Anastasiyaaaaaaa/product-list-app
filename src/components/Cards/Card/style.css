@@ -8,6 +8,18 @@
     background-color: #1698d9;
 }
 
+.card_default .card__border:hover {
+    background-color: #2ea8e5;
+}
+
+.card_selected .card__border:hover .card__header {
+    color: #d91667;
+}
+
+.card__header {
+    transition: color 0.5s;
+}
+
 .card__border {
     /* margin: 14px; */
     position: relative;
@@ -15,6 +27,7 @@
     height: 488px;
     border-radius: 14px;
     clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+    transition: background-color .5s;
 }
 
 .card__content {
@@ -30,7 +43,7 @@
     clip-path: polygon(14.7% 0, 100% 0, 100% 100%, 0 100%, 0 9.7%);
 }
 
-.card__content-container {
+.card__text-container {
     margin: 20px 40px;
 }
 
