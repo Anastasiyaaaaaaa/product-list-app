@@ -1,8 +1,0 @@
-.circle {
-    border-radius: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color .5s;
-}

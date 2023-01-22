@@ -13,7 +13,9 @@ export const Card = ({ data }) => {
     const [cardHeader, setCardHeader] = useState(textDefault)
 
     const handleClick = () => {
-        setIsSelected(!isSelected)
+        if (isStocked) {
+            setIsSelected(!isSelected)
+        }
     }
 
     const handleMouseOver = () => {
@@ -59,13 +61,16 @@ export const Card = ({ data }) => {
             </div>
         </div>
         <div className='card__footer'>
-            <p>Чего сидишь? Порадуй котэ,
-                <button
-                    className='card__button'
-                    type='button'
-                    onClick={handleClick}>купи.
-                </button>
-            </p>
+            {isSelected ?
+                <span>{data.footerSelected}</span> 
+                : <span>Чего сидишь? Порадуй котэ, 
+                    <button
+                        className='card__button'
+                        type='button'
+                        onClick={handleClick}> купи.
+                    </button>
+                </span>
+            }
         </div>
     </div>
 }

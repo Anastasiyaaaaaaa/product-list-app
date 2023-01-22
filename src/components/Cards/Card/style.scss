@@ -1,38 +1,14 @@
-$contentColor: #666666;
-$defaultColor: #1698d9;
-$defaultHoverColor: #2ea8e5;
-$selectedColor: #d91667;
-$disableColor: hsla(0, 0%, 70%, .5);
-$disableBorderColor: #b3b3b3;
-$disableFooterColor: #ffff66;
+@import '../../../utils/variables.scss';
 .card {}
-
-.card_default .card__border,
-.card_default .circle {
-    background-color: $defaultColor;
-}
-
-.card_selected .card__border,
-.card_selected .circle {
-    background-color: $selectedColor;
-}
-
-.card_default .card__border:hover,
-.card_default .card__border:hover .circle {
-    background-color: $defaultHoverColor;
-}
-
-.card_selected .card__border:hover .card__header {
-    color: $selectedColor;
-}
-
-.card_disable .card__border,
-.card_disable .circle {
-    background-color: $disableBorderColor;
-}
 
 .card__header {
     transition: color 0.5s;
+}
+
+.card__footer {
+    width: fit-content;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .card__border {
@@ -44,8 +20,12 @@ $disableFooterColor: #ffff66;
     transition: background-color .5s;
 }
 
-.card__content {
+.card_default .card__content,
+.card_selected .card__content {
     cursor: pointer;
+}
+
+.card__content {
     overflow: hidden;
     position: absolute;
     background: white;
@@ -72,10 +52,38 @@ $disableFooterColor: #ffff66;
 
 .card__button {
     cursor: pointer;
+    border: none;
+    outline: none;
+    color: $defaultColor;
+    background-color: initial;
 }
 
 .card__foto {
     position: absolute;
     right: -20px;
     bottom: -95px;
+}
+
+.card_default .card__border {
+    background-color: $defaultColor;
+}
+
+.card_selected .card__border {
+    background-color: $selectedColor;
+}
+
+.card_default .card__border:hover {
+    background-color: $defaultHoverColor;
+}
+
+.card_selected .card__border:hover .card__header {
+    color: $selectedColor;
+}
+
+.card_disable .card__border {
+    background-color: $disableBorderColor;
+}
+
+.card_disable .card__border {
+    opacity: 0.5
 }

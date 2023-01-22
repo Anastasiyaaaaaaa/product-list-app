@@ -1,0 +1,25 @@
+@import '../../../utils/variables.scss';
+.circle {
+    border-radius: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .5s;
+}
+
+.card_default .circle {
+    background-color: $defaultColor;
+}
+
+.card_selected .circle {
+    background-color: $selectedColor;
+}
+
+.card_default .card__border:hover .circle {
+    background-color: $defaultHoverColor;
+}
+
+.card_disable .circle {
+    background-color: $disableBorderColor;
+}
