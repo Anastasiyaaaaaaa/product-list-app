@@ -1,0 +1,20 @@
+@import '../../../../utils/variables.scss';
+.card__footer {
+    width: fit-content;
+    max-width: 300px;
+    margin: 0 auto;
+    color: #ffffff;
+    text-align: center;
+}
+
+.card_disable .card__footer {
+    color: $disableFooterColor;
+}
+
+.card__button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: $defaultColor;
+    background-color: initial;
+}

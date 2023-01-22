@@ -14,7 +14,7 @@
             "footerDefault": "Чего сидишь? Порадуй котэ,",
             "footerSelected": "Печень утки разварная с артишоками.",
             "footerDisable": "Печалька, с фуа-гра закончился.",
-            "stocked": "yes"
+            "isAvailable": true
         },
 
         {
@@ -30,7 +30,7 @@
             "footerDefault": "Чего сидишь? Порадуй котэ,",
             "footerSelected": "Головы щучьи с чесноком да свежайшая сёмгушка.",
             "footerDisable": "Печалька, с рыбой закончился.",
-            "stocked": "yes"
+            "isAvailable": true
         },
 
         {
@@ -46,7 +46,7 @@
             "footerDefault": "Чего сидишь? Порадуй котэ,",
             "footerSelected": "Филе из цыплят с трюфелями в бульоне.",
             "footerDisable": "Печалька, с курой закончился.",
-            "stocked": "no"
+            "isAvailable": false
         }
 
     ]

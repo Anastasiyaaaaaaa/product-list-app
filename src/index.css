@@ -3,3 +3,10 @@
     font-family: "Exo 2.0", arial;
     src: url("./fonts/Exo2.0-Thin.otf");
 }
+
+body {
+    user-select: none;
+    background-repeat: repeat;
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.45), rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.45)), url('./img/bg-pattern.png');
+}

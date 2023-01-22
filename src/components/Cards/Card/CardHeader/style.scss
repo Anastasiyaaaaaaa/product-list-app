@@ -1,0 +1,9 @@
+@import '../../../../utils/variables.scss';
+.card__header {
+    transition: color 0.5s;
+    margin: 20px 40px;
+}
+
+.card_selected .card__border:hover .card__header {
+    color: $selectedColor;
+}
