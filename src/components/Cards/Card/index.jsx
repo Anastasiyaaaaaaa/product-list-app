@@ -4,11 +4,12 @@ import catFoto from './img/cat-photo.png'
 import { CardFooter } from './CardFooter';
 import { CardContent } from './CardContent';
 import { CardHeader } from './CardHeader';
+import { getCardClass } from './func';
 
 export const Card = ({ data }) => {
 
     const textDefault = 'Сказочное заморское яство'
-    const textSelHover = 'Котэ не одобряет?' 
+    const textSelHover = 'Котэ не одобряет?'
 
     const [isSelected, setIsSelected] = useState(false)
     const [cardHeader, setCardHeader] = useState(textDefault)
@@ -29,14 +30,9 @@ export const Card = ({ data }) => {
         setCardHeader(textDefault)
     }
 
-    return <div className={`card_${data.isAvailable ?
-        isSelected ? 'selected' : 'default'
-        :
-        'disable'
-        }`}>
+    return <div className={getCardClass(data.isAvailable, isSelected)}>
         <div className="card__border" onClick={handleClick} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
             <div className="card__container">
-
                 <CardHeader
                     cardHeader={cardHeader} />
                 <CardContent
