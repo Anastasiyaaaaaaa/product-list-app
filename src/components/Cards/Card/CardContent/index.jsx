@@ -11,7 +11,7 @@ export const CardContent = ({ data, catFoto }) => {
             <div className='card__text'>
                 <div className='card__comment'> {data.quantity} </div>
                 <div className='card__comment'> {data.present} </div>
-                <div className='card__comment'> {data.dop_info} </div>
+                <div className='card__comment'> {data.dopInfo} </div>
             </div>
 
         </div>
@@ -21,7 +21,7 @@ export const CardContent = ({ data, catFoto }) => {
         </div>
 
         <div className="card__elem_right-bottom">
-            <Circle text={`${data.weight} кг`} />
+            <Circle largeText={data.weight} smallText='кг' />
         </div>
     </>
 }

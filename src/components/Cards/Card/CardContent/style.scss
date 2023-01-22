@@ -3,6 +3,30 @@
     margin: 20px 40px;
 }
 
+.card__title {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.card__subtitle {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card__text {
+    font-size: 14px;
+    margin-top: 15px;
+    color: $contentColor;
+}
+
+.card__comment {}
+
+.card__foto {
+    position: absolute;
+    right: -20px;
+    bottom: -95px;
+}
+
 .card__elem_right-bottom {
     position: absolute;
     right: 5%;
@@ -10,10 +34,4 @@
     width: 80px;
     height: 80px;
     color: #ffffff;
-}
-
-.card__foto {
-    position: absolute;
-    right: -20px;
-    bottom: -95px;
 }

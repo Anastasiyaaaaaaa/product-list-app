@@ -8,8 +8,8 @@ import { getCardClass } from './func';
 
 export const Card = ({ data }) => {
 
-    const textDefault = 'Сказочное заморское яство'
-    const textSelHover = 'Котэ не одобряет?'
+    const textDefault = data.topDefault
+    const textSelHover = data.topSelectedHover
 
     const [isSelected, setIsSelected] = useState(false)
     const [cardHeader, setCardHeader] = useState(textDefault)
@@ -48,5 +48,5 @@ export const Card = ({ data }) => {
             taste={data.taste}
             handleClick={handleClick} />
 
-    </div >
+    </div>
 }
