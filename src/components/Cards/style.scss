@@ -1,5 +1,5 @@
 .cards {
-    width: 80vw;
+    width: 95vw;
     margin: 0 auto;
     font-family: 'Trebuchet MS';
 }
@@ -8,13 +8,39 @@
     text-align: center;
     color: #ffffff;
     font-family: "Exo 2.0", arial;
-    font-size: 36px;
+    font-size: 2.5em;
     letter-spacing: 2px;
 }
 
 .cards__content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     row-gap: 100px;
     justify-items: center;
+}
+
+
+/* Нетбуки и планшеты*/
+
+@media screen and (min-width: 768px) {
+    .cards__content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* Мониторы не full-hd */
+
+@media screen and (min-width: 1280px) {
+    .cards__content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* Мониторы full-hd */
+
+@media screen and (min-width: 1920px) {
+    .cards__content {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }

@@ -61,7 +61,7 @@
             "footerDefault": "Чего сидишь? Порадуй котэ,",
             "footerSelected": "Печень утки разварная с артишоками.",
             "footerDisable": "Печалька, с фуа-гра закончился.",
-            "isAvailable": true
+            "isAvailable": false
         },
 
         {
