@@ -5,6 +5,8 @@
     margin: 0 auto;
     color: #ffffff;
     text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
 }
 
 .card_disable .card__footer {
@@ -17,4 +19,8 @@
     outline: none;
     color: $defaultColor;
     background-color: initial;
+}
+
+.card__button span {
+    border-bottom: 1px dashed;
 }

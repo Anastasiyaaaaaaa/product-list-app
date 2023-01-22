@@ -11,7 +11,8 @@ export const CardFooter = ({ isAvailable, isSelected, footerSelectedText, taste,
                         <button
                             className='card__button'
                             type='button'
-                            onClick={handleClick}> купи.
+                            onClick={handleClick}> 
+                            <span>купи.</span>
                         </button>
                     </span>
                 :
