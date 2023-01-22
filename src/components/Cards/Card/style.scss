@@ -1,31 +1,34 @@
+$contentColor: #666666;
+$defaultColor: #1698d9;
+$defaultHoverColor: #2ea8e5;
+$selectedColor: #d91667;
+$disableColor: hsla(0, 0%, 70%, .5);
+$disableBorderColor: #b3b3b3;
+$disableFooterColor: #ffff66;
 .card {}
 
-.card_selected .card__border {
-    background-color: #d91667;
+.card_default .card__border,
+.card_default .circle {
+    background-color: $defaultColor;
 }
 
-.card_default .card__border {
-    background-color: #1698d9;
+.card_selected .card__border,
+.card_selected .circle {
+    background-color: $selectedColor;
 }
 
-.card_default .card__border:hover {
-    background-color: #2ea8e5;
+.card_default .card__border:hover,
+.card_default .card__border:hover .circle {
+    background-color: $defaultHoverColor;
 }
 
 .card_selected .card__border:hover .card__header {
-    color: #d91667;
+    color: $selectedColor;
 }
 
-.card_selected .circle {
-    background-color: #d91667;
-}
-
-.card_default .circle {
-    background-color: #1698d9;
-}
-
-.card_default .card__border:hover .circle {
-    background-color: #2ea8e5;
+.card_disable .card__border,
+.card_disable .circle {
+    background-color: $disableBorderColor;
 }
 
 .card__header {
@@ -33,7 +36,6 @@
 }
 
 .card__border {
-    /* margin: 14px; */
     position: relative;
     width: 328px;
     height: 488px;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './style.css'
+import './style.scss'
 import catFoto from './img/cat-photo.png'
 import { Circle } from '../Circle';
 
@@ -7,7 +7,7 @@ export const Card = ({ data }) => {
 
     const textDefault = 'Сказочное заморское яство'
     const textSelHover = 'Котэ не одобряет?'
-
+    const isStocked = data.stocked !== 'no'
 
     const [isSelected, setIsSelected] = useState(false)
     const [cardHeader, setCardHeader] = useState(textDefault)
@@ -26,7 +26,11 @@ export const Card = ({ data }) => {
         setCardHeader(textDefault)
     }
 
-    return <div className={`card_${isSelected ? 'selected' : 'default'}`}>
+    return <div className={`card_${isStocked ?
+        isSelected ? 'selected' : 'default'
+        :
+        'disable'
+        }`}>
         <div className="card__border" onClick={handleClick} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
             <div className="card__content">
 
@@ -50,7 +54,7 @@ export const Card = ({ data }) => {
                 </div>
 
                 <div className="card__elem_right-bottom">
-                    <Circle text={`${data.weight} кг`}/> 
+                    <Circle text={`${data.weight} кг`} />
                 </div>
             </div>
         </div>

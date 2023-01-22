@@ -61,6 +61,17 @@ module.exports = {
                     'css-loader'
                 ]
 
+            }, {
+                // scss
+                test: /\.s[ac]ss$/,
+                use: [{
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {}
+                    },
+                    'css-loader',
+                    'sass-loader'
+                ]
+
             },
             { // картинки
                 test: /\.(jpg|png|svg|gif)$/,
