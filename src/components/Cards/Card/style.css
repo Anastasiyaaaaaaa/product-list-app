@@ -16,6 +16,18 @@
     color: #d91667;
 }
 
+.card_selected .circle {
+    background-color: #d91667;
+}
+
+.card_default .circle {
+    background-color: #1698d9;
+}
+
+.card_default .card__border:hover .circle {
+    background-color: #2ea8e5;
+}
+
 .card__header {
     transition: color 0.5s;
 }
@@ -41,6 +53,15 @@
     height: 480px;
     border-radius: 11px;
     clip-path: polygon(14.7% 0, 100% 0, 100% 100%, 0 100%, 0 9.7%);
+}
+
+.card__elem_right-bottom {
+    position: absolute;
+    right: 5%;
+    bottom: 3%;
+    width: 80px;
+    height: 80px;
+    color: #ffffff;
 }
 
 .card__text-container {
