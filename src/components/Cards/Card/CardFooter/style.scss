@@ -1,7 +1,7 @@
 @import '../../../../utils/variables.scss';
 .card__footer {
-    width: fit-content;
-    max-width: 300px;
+    position: absolute;
+    width: 300px;
     margin: 0 auto;
     color: #ffffff;
     text-align: center;

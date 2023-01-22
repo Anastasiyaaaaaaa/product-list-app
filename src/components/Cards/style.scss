@@ -12,6 +12,8 @@
 }
 
 .cards__content {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 100px;
+    justify-items: center;
 }
