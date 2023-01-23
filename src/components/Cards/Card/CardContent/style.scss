@@ -32,34 +32,46 @@
     right: 5%;
     bottom: 3%;
     color: #ffffff;
+    width: 6vw;
+    height: 6vw;
 }
 
-
-/* Нетбуки и планшеты*/
-
-@media screen and (min-width: 768px) {
+@media (max-width: 1500px) {
     .card__elem_right-bottom {
-        width: 7vw;
-        height: 7vw;
+        width: 4.5vw;
+        height: 4.5vw;
     }
 }
 
-
-/* Мониторы не full-hd */
-
-@media screen and (min-width: 1280px) {
+@media (max-width: 1200px) {
     .card__elem_right-bottom {
         width: 6vw;
         height: 6vw;
     }
 }
 
-
-/* Мониторы full-hd */
-
-@media screen and (min-width: 1920px) {
+@media (max-width: 770px) {
     .card__elem_right-bottom {
-        width: 4.5vw;
-        height: 4.5vw;
+        width: 8vw;
+        height: 8vw;
+    }
+}
+
+@media (max-width: 450px) {
+    .card__text-container {
+        margin: 20px;
+    }
+    .card__elem_right-bottom {
+        width: 16vw;
+        height: 16vw;
+    }
+    .card__title {
+        font-size: 1.5em;
+    }
+    .card__subtitle {
+        font-size: 1em;
+    }
+    .card__text {
+        font-size: 0.7em;
     }
 }

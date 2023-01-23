@@ -1,8 +1,11 @@
 @import '../../../utils/variables.scss';
+$cardWidth:328px;
+$cardHeight:488px;
+$borderWidth:4px;
 .card__border {
     position: relative;
-    width: 328px;
-    height: 488px;
+    width: $cardWidth;
+    height: $cardHeight;
     border-radius: 14px;
     clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
     transition: background-color .5s;
@@ -12,10 +15,10 @@
     overflow: hidden;
     position: absolute;
     background: white;
-    top: 4px;
-    left: 4px;
-    width: 320px;
-    height: 480px;
+    top: $borderWidth;
+    left: $borderWidth;
+    width: $cardWidth - $borderWidth*2;
+    height: $cardHeight - $borderWidth*2;
     border-radius: 11px;
     clip-path: polygon(14.7% 0, 100% 0, 100% 100%, 0 100%, 0 9.7%);
 }
@@ -43,4 +46,18 @@
 .card_default .card__container,
 .card_selected .card__container {
     cursor: pointer;
+}
+
+@media (max-width: 450px) {
+    .card__border {
+        width: $cardWidth/1.5;
+        height: $cardHeight/1.5;
+    }
+    .card__container {
+        width: $cardWidth/1.5 - $borderWidth*2;
+        height: $cardHeight/1.5 - $borderWidth*2;
+    }
+    .card__foto img {
+        width: 250px;
+    }
 }

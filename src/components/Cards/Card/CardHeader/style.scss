@@ -9,3 +9,11 @@
 .card_selected .card__border:hover .card__header {
     color: $selectedColor;
 }
+
+@media (max-width: 450px) {
+    .card__header {
+        font-size: 0.9em;
+        margin: 20px 20px;
+        height: 20px;
+    }
+}

@@ -24,3 +24,9 @@
 .card__button span {
     border-bottom: 1px dashed;
 }
+
+@media (max-width: 450px) {
+    .card__footer {
+        width: 150px;
+    }
+}
