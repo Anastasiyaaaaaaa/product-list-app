@@ -1,7 +1,7 @@
 /*  все стили для устройств с viewport больше 1500 пикселей. */
 
 .cards {
-    width: 95vw;
+    width: 70vw;
     margin: 0 auto;
     font-family: 'Trebuchet MS';
 }
@@ -15,28 +15,23 @@
 }
 
 .cards__content {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: 100px;
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 @media (max-width: 1500px) {
-    .cards__content {
-        grid-template-columns: repeat(3, 1fr);
+    .cards {
+        width: 90vw;
     }
 }
 
 @media (max-width: 1200px) {
-    .cards__content {
-        grid-template-columns: repeat(2, 1fr);
+    .cards {
+        width: 80vw;
     }
 }
 
-@media (max-width: 770px) {
-    .cards__content {
-        grid-template-columns: 1fr;
-    }
-}
+@media (max-width: 770px) {}
 
 @media (max-width: 450px) {}

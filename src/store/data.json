@@ -47,53 +47,6 @@
             "footerSelected": "Филе из цыплят с трюфелями в бульоне.",
             "footerDisable": "Печалька, с курой закончился.",
             "isAvailable": false
-        },
-        {
-            "id": "3",
-            "name": "Нямушка",
-            "taste": "с фуа-гра",
-            "quantity": "10  порций",
-            "weight": "2",
-            "present": "мышь в подарок",
-            "dopInfo": "",
-            "topDefault": "Сказочное заморское яство",
-            "topSelectedHover": "Котэ не одобряет?",
-            "footerDefault": "Чего сидишь? Порадуй котэ,",
-            "footerSelected": "Печень утки разварная с артишоками.",
-            "footerDisable": "Печалька, с фуа-гра закончился.",
-            "isAvailable": false
-        },
-
-        {
-            "id": "4",
-            "name": "Нямушка",
-            "taste": "с рыбой",
-            "quantity": "40 порций",
-            "weight": "5",
-            "present": "2 мыши в подарок",
-            "dopInfo": "",
-            "topDefault": "Сказочное заморское яство",
-            "topSelectedHover": "Котэ не одобряет?",
-            "footerDefault": "Чего сидишь? Порадуй котэ,",
-            "footerSelected": "Головы щучьи с чесноком да свежайшая сёмгушка.",
-            "footerDisable": "Печалька, с рыбой закончился.",
-            "isAvailable": true
-        },
-
-        {
-            "id": "5",
-            "name": "Нямушка",
-            "taste": "с курой",
-            "quantity": "100 порций",
-            "weight": "2",
-            "present": "5 мышей в подарок",
-            "dopInfo": "заказчик доволен",
-            "topDefault": "Сказочное заморское яство",
-            "topSelectedHover": "Котэ не одобряет?",
-            "footerDefault": "Чего сидишь? Порадуй котэ,",
-            "footerSelected": "Филе из цыплят с трюфелями в бульоне.",
-            "footerDisable": "Печалька, с курой закончился.",
-            "isAvailable": true
         }
 
     ]
