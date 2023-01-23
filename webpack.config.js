@@ -30,6 +30,7 @@ module.exports = {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
         assetModuleFilename: 'assets/[hash][ext][query]',
+        publicPath: "/product-list-app/",
     },
     resolve: {
         extensions: ['.js', '.jsx']
