@@ -34,12 +34,20 @@
     background-color: $disableBorderColor;
 }
 
+@media (max-width: 770px) {
+    .circle__text_large {
+        font-size: 1.9em;
+    }
+    .circle__text_small {
+        font-size: 1em;
+    }
+}
+
 @media (max-width: 450px) {
     .circle__text_large {
         font-size: 1.7em;
     }
     .circle__text_small {
         font-size: 1em;
-        line-height: 0.5em;
     }
 }
